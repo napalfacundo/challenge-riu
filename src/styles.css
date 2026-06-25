@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@theme {
+  --color-riu-red: #e4002b;
+  --color-riu-dark: #343a40;
+  --color-riu-bg-section: #f4f4f5;
+  --color-riu-placeholder: #bdbdbd;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: var(--color-riu-dark);
+  }
+
+  h1, h2, h3, .riu-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  p, .riu-body {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
