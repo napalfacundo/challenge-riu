@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
+import { ChallengeLayout } from './components/challenge-layout/challenge-layout';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [ChallengeLayout],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  // styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('challenge-layout');
