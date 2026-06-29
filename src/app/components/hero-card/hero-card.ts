@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './hero-card.html',
+  styleUrl: './hero-card.css'
 })
 export class HeroCard {}

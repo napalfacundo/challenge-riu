@@ -6,6 +6,6 @@ import { HeroCard } from '../hero-card/hero-card';
   standalone: true,
   imports: [HeroCard],
   templateUrl: './challenge-layout.html',
-  encapsulation: ViewEncapsulation.None
+  styleUrl: './challenge-layout.css',
 })
 export class ChallengeLayout {}
