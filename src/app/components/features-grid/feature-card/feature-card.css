@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.card-item {
+  height: 100%;
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+}
