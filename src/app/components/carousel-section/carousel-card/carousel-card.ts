@@ -5,6 +5,5 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './carousel-card.html',
-  styleUrl: './carousel-card.css'
 })
 export class CarouselCard {}
