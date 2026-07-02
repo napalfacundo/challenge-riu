@@ -1,21 +1,33 @@
 <section class="w-full bg-white">
-  <div class="max-w-[1542px] mx-auto flex flex-col gap-12">
-    
+  <div class="max-w-[var(--container-max)] mx-auto flex flex-col gap-12">
     <div class="flex flex-col gap-6 w-full max-w-[1410px]">
-      <h2 class="text-black font-bold text-[30px] leading-[38px] md:text-[48px] md:leading-[58px] tracking-normal" id="carousel-title">
+      <h2
+        class="text-black font-bold text-[30px] leading-[38px] md:text-[48px] md:leading-[58px] tracking-normal"
+        id="carousel-title"
+      >
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
       </h2>
       <p class="text-black font-normal text-base leading-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+        hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices
+        mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare
+        leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante
+        fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut
+        diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci
+        facilisis id.
       </p>
     </div>
 
-    <div class="w-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar flex gap-8  focus:outline-none focus:ring-3 focus:ring-black-600" role="region" aria-roledescription="carousel" aria-label="Latest insights carousel" tabindex="0">
+    <div
+      role="list"
+      aria-label="Featured insights"
+      class="w-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar flex gap-8"
+      tabindex="0"
+    >
       <app-carousel-card></app-carousel-card>
       <app-carousel-card></app-carousel-card>
       <app-carousel-card></app-carousel-card>
       <app-carousel-card></app-carousel-card>
     </div>
-
   </div>
 </section>

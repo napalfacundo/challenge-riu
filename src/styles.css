@@ -7,6 +7,7 @@
   --color-riu-placeholder: #bdbdbd;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --container-max: 1542px;
 }
 
 @layer base {
@@ -19,12 +20,6 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: #ffffff;
     color: var(--color-riu-dark);
-  }
-
-  h1, h2, h3, .riu-title {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
   }
 
   p, .riu-body {
