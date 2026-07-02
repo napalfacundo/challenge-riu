@@ -3,7 +3,6 @@
     <div class="flex flex-col gap-6 w-full max-w-[1410px]">
       <h2
         class="text-black font-bold text-[30px] leading-[38px] md:text-[48px] md:leading-[58px] tracking-normal"
-        id="carousel-title"
       >
         Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
       </h2>
@@ -20,14 +19,11 @@
 
     <div
       role="list"
-      aria-label="Featured insights"
       class="w-full overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar flex gap-8"
-      tabindex="0"
     >
-      <app-carousel-card></app-carousel-card>
-      <app-carousel-card></app-carousel-card>
-      <app-carousel-card></app-carousel-card>
-      <app-carousel-card></app-carousel-card>
+      @for (slide of slides; track slide.id) {
+        <app-carousel-card [data]="slide" role="listitem"></app-carousel-card>
+      }
     </div>
   </div>
 </section>

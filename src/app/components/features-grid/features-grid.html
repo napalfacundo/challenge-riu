@@ -2,7 +2,6 @@
   <div class="flex flex-col gap-6">
     <h2
       class="text-black font-bold text-3xl md:text-5xl leading-[58px] tracking-normal"
-      id="features-title"
     >
       Lorem ipsum dolor sit
     </h2>
@@ -45,11 +44,12 @@
   </div>
 
   <div class="cards-grid">
-    <app-feature-card></app-feature-card>
-    <app-feature-card></app-feature-card>
-    <app-feature-card></app-feature-card>
-    <app-feature-card></app-feature-card>
-    <app-feature-card></app-feature-card>
-    <app-feature-card></app-feature-card>
+    @for (card of cards; track card.id) {
+      <app-feature-card
+        [data]="card"
+        [class.hidden]="!card.showOnMobile"
+        class="lg:block"
+      ></app-feature-card>
+    }
   </div>
 </div>

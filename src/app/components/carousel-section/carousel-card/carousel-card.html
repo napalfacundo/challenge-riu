@@ -1,6 +1,5 @@
 <button
   class="w-[312px] aspect-[3/4] md:w-[360px] shrink-0 snap-start relative rounded-lg overflow-hidden bg-riu-placeholder group cursor-pointer flex items-center justify-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2"
-  aria-label="Carousel card"
 >
   <span class="text-stone-400 font-bold text-4xl" aria-hidden="true">IMAGE</span>
 
@@ -8,15 +7,15 @@
     class="absolute bottom-0 left-0 right-0 h-[40%] bg-gradient-to-t from-black/95 via-black/60 to-transparent flex flex-col justify-end p-6"
   >
     <h3 class="text-white font-bold text-[30px] leading-[38px] tracking-normal mb-2">
-      Lorem ipsum
+      {{ data.title }}
     </h3>
 
     <p class="text-white font-normal text-base leading-6 max-w-[304px] line-clamp-2">
-      Lorem ipsum dolor sit amet consectetur.
+      {{ data.description }}
     </p>
 
     <div class="flex items-center gap-[4px] h-6 text-white text-base font-bold mt-12">
-      <span class="w-[101px] h-6 leading-6">Lorem ipsum</span>
+      <span class="w-[101px] h-6 leading-6">{{ data.ctaLabel }}</span>
       <img
         src="assets/icons/arrow-download.svg"
         alt=""

@@ -1,7 +1,6 @@
 <a
-  href="#"
+  [href]="data.href"
   class="card-item flex flex-col gap-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black focus-visible:ring-offset-2 cursor-pointer"
-  aria-label="Feature card"
 >
   <div
     class="card-image w-full bg-riu-placeholder rounded-lg flex items-center justify-center shrink-0"
@@ -13,20 +12,15 @@
     class="category-tag flex items-center gap-[6px] text-[16px] leading-[24px] text-riu-dark font-bold"
   >
     <img src="assets/icons/Calendar.svg" class="w-6 h-6 shrink-0" alt="" aria-hidden="true" />
-    Lorem ipsum dolor sit amet.
+    {{ data.dateLabel }}
   </div>
   <h3
     class="card-title text-black font-bold text-[23px] leading-[25px] md:text-[30px] md:leading-[38px] line-clamp-2"
   >
-    Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+    {{ data.title }}
   </h3>
 
   <p class="card-description text-riu-dark font-normal text-[16px] leading-[24px] line-clamp-5">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
-    urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
-    Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-    suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
-    amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
-    vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+    {{ data.description }}
   </p>
 </a>
